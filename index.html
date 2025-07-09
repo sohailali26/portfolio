@@ -147,6 +147,24 @@
         html.dark input::placeholder, html.dark textarea::placeholder {
             color: #a0aec0; /* Lighter placeholder text */
         }
+
+        /* Animation for the name */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+            animation-delay: 0.5s; /* Delay to make it appear after other elements */
+            opacity: 0; /* Start hidden */
+        }
     </style>
 </head>
 <body>
@@ -155,7 +173,7 @@
     <header class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-16 md:py-24">
         <div class="container flex flex-col md:flex-row items-center justify-between text-center md:text-left">
             <div class="mb-8 md:mb-0 md:w-2/3">
-                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Hi, I'm Sohail</h1>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight animate-fade-in-up">Hi, I'm Sohail</h1>
                 <p class="text-xl md:text-2xl font-light mb-6">A Passionate Software Development Engineer</p>
                 <p class="text-lg mb-4 max-w-2xl mx-auto md:mx-0">
                     I build robust and scalable software solutions. With a strong foundation in backend development, cloud technologies, and data structures, I thrive on solving complex problems and
