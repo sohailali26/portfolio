@@ -71,6 +71,7 @@
             padding: 2rem;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden; /* Added to prevent content overflow */
         }
         .card:hover {
             transform: translateY(-5px);
@@ -265,7 +266,7 @@
             <!-- Example Skill Category -->
             <div class="card">
                 <h3 class="text-xl font-semibold mb-4 text-indigo-600">Languages</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-700 break-words">
                     <li>Java</li>
                     <li>JavaScript (ES6+)</li>
                     <li>Go</li>
@@ -276,7 +277,7 @@
             <!-- Example Skill Category -->
             <div class="card">
                 <h3 class="text-xl font-semibold mb-4 text-indigo-600">Frameworks & Libraries</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-700 break-words">
                     <li>Spring Boot</li>
                     <li>Hibernate</li>
                     <li>React.js</li>
@@ -287,7 +288,7 @@
             <!-- Example Skill Category -->
             <div class="card">
                 <h3 class="text-xl font-semibold mb-4 text-indigo-600">Databases</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-700 break-words">
                     <li>PostgreSQL</li>
                     <li>MongoDB</li>
                     <li>MySQL</li>
@@ -296,7 +297,7 @@
             <!-- Example Skill Category -->
             <div class="card">
                 <h3 class="text-xl font-semibold mb-4 text-indigo-600">Cloud & DevOps</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-700 break-words">
                     <li>GCP</li>
                     <li>Docker</li>
                     <li>Kubernetes</li>
@@ -307,7 +308,7 @@
             <!-- Add more skill categories as needed -->
             <div class="card">
                 <h3 class="text-xl font-semibold mb-4 text-indigo-600">Tools & Methodologies</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-700 break-words">
                     <li>RESTful APIs</li>
                     <li>Microservices</li>
                     <li>Dynatrace</li>
